@@ -30,7 +30,7 @@ int main(){
      for(int i=0; i<n1; i++){
         for(int j=0; j<n3; j++){
             for(int k=0; k<n2; k++){
-                arr[i][j] = m1[i][k]*m2[k][j];
+                arr[i][j] += m1[i][k]*m2[k][j];
             }
         }         
 
