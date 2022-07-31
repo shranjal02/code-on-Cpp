@@ -14,7 +14,7 @@ int main(){
         }
     }
     for(int i=0; i<n; i++){
-        for(int j=0; j<m; j++){
+        for(int j=i; j<m; j++){
             int temp;
             temp = arr[i][j];
             arr[i][j] = arr[j][i];
@@ -23,7 +23,7 @@ int main(){
     }
     for(int i=0; i<n; i++){
         for(int j=0; j<m; j++){
-            cout<<arr[j][i]<<" ";
+            cout<<arr[i][j]<<" ";
         }cout<<endl;
     }
 
